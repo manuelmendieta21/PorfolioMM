@@ -21,12 +21,12 @@ const { title } = Astro.props;
 	<body>
 		<!-- Fondo del modo claro -->
 		<div id="light-bg" class="absolute inset-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
-
+		<!--Agregamos los fondos para que se oculten los controlamos mediante javascript para validar el tema  -->
 		<!-- Fondo del modo oscuro -->
 		<div id="dark-bg" class="absolute inset-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] hidden"></div>
 
-		<Header />
-		<slot />
+		<Header/>
+		<slot/>
 
 		<button id="theme-toggle" class="fixed bottom-4 right-4 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded">Toggle Theme</button>
 	</body>
