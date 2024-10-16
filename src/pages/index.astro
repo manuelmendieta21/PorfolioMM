@@ -6,27 +6,31 @@ import Available from '../components/Available.astro';
 ---
 
 <Layout title="Portafolio >MM">
-	<main >
-		<section  class="p-8 m-7 ">
-			
+	<main>
+		<section class="p-8 m-7">
+			<!-- Imagen centrada -->
 			<div class="flex justify-center">
 				<img class="rounded-full w-[120px] h-[120px]" src="/PorfolioMM/MMPhoto2.jpg" alt="manudev" />	
 			</div>
 
+			<!-- Badge centrado -->
 			<div class="flex justify-center p-2.5">
 				<Badge>Disponible</Badge>
 			</div>
 			
-				<h1 class="flex justify-center text-5xl font-bold">Hola, <br>
-					Soy Manuel Mendieta</h1>
-				
-					<div class="flex justify-center w-[620px] h-[260px] mx-auto my-auto">
-						<h2 class="m-3 p-3">
-							Ingeniero de Sistemas con 10 años de Experiencia, Liderando proyectos de infraestructura de servidores Onpremise y cloud AWS, administración de bases de datos (SQL, MySQL, PostgreSQL). Conocimientos en desarrollo de software y diseño de páginas web.
-						</h2>
-					</div>
-			
-			
+			<!-- Título centrado y responsivo -->
+			<h1 class="flex justify-center text-1xl sm:text-1xl md:text-2xl lg:text-4xl font-bold text-center">
+				Hola, <br>Soy Manuel Mendieta
+			</h1>
+
+			<!-- Contenedor centrado y responsivo -->
+			<div class="flex justify-center">
+				<div class="max-w-screen-md text-center p-4">
+					<h2 class="m-2 p-2">
+						Ingeniero de Sistemas con 10 años de Experiencia, Liderando proyectos de infraestructura de servidores Onpremise y cloud AWS, administración de bases de datos (SQL, MySQL, PostgreSQL). Conocimientos en desarrollo de software y diseño de páginas web.
+					</h2>
+				</div>
+			</div>
 		</section>
 	</main>
 </Layout>
