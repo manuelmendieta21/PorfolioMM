@@ -2,7 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import Badge from  '../components/Badge.astro';
 import { DevToolbarBadge } from 'astro/runtime/client/dev-toolbar/ui-library/badge.js';
-import Available from '../components/Available.astro';
+import Linkedin from  '../icons/LinkedinIcon.astro';
+import Github from  '../icons/GithubIcon.astro';
+import SocialPill from '../components/SocialPill.astro';
+
 ---
 
 <Layout title="Portafolio >MM">
@@ -31,6 +34,16 @@ import Available from '../components/Available.astro';
 					</h2>
 				</div>
 			</div>
+
+			<nav class="flex gap-x-4 justify-center ">
+				<SocialPill class="" href="https://www.linkedin.com/in/manuel-mendieta-b0a43167/">
+					<Linkedin class="w-6 h-6"/>
+					linkedin
+				<SocialPill href="https://github.com/ManuelMendieta21">
+					<Github class="w-6 h-6"/>
+					Github</a>
+				
+			</nav>
 		</section>
 	</main>
 </Layout>
