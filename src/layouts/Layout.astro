@@ -16,21 +16,30 @@ const {description, title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" sizes="16x16" type="image/png" href="/Group.png" />
+		<link rel="icon" type="image/png" href="/Group.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
 		
 		<!-- Fondo del modo claro -->
-		<div id="light-bg" class="absolute inset-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+		 <div id="light-bg" class="fixed left-0 top-0 -z-10 h-full w-full">
+			<div class="absolute inset-0 z-[-2] min-h-screen w-screen bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_0.5px)] bg-[size:25px_25px]">
+			</div>
+		 </div>
+		
+		<div id="dark-bg" class="fixed left-0 top-0 -z-10 h-full w-full" >
+			<div class="absolute inset-0 z-[-2] min-h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:30px_30px] "></div>
+		</div>
 		<!--Agregamos los fondos para que se oculten los controlamos mediante javascript para validar el tema  -->
 		<!-- Fondo del modo oscuro -->
-		<div id="dark-bg" class="absolute inset-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] hidden"></div>
+
+		
 		<Header/>
 		
 		
 		<slot/>
+
 	
 		
 	</body>
@@ -44,18 +53,21 @@ const {description, title } = Astro.props;
 		font-family: 'Onest', sans-serif;
 	}
 	body {
-		height: 100vh;
+		min-height: 100vh;
 		transition: background-color 0.3s, color 0.3s;
+		
 	}
 	/* Modo claro */
 	body.light {
 		background-color: #ffffff;
 		color: #000000;
+		
 	}
 	/* Modo oscuro */
 	body.dark {
 		background-color: #000000;
 		color: #ffffff;
+		
 	}
 </style>
 

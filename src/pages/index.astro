@@ -5,6 +5,7 @@ import Linkedin from  '../icons/LinkedinIcon.astro';
 import Github from  '../icons/GithubIcon.astro';
 import SocialPill from '../components/SocialPill.astro';
 import Perfil from '../icons/Perfil.astro';
+import Timeline from  '../components/Timeline.astro';
 ---
 
 <Layout title="Porfolio Manuel Mendieta Ingeniero de sistemas" description="Ingeniero de sistemas con mas de 10 años de experiencia">
@@ -29,7 +30,7 @@ import Perfil from '../icons/Perfil.astro';
 			<div class="flex justify-center">
 				<div class="max-w-screen-md text-center p-4">
 					<h2 class="m-2 p-2">
-						Ingeniero de Sistemas con 10 años de Experiencia, Liderando proyectos de infraestructura de servidores Onpremise y cloud AWS, administración de bases de datos (SQL, MySQL, PostgreSQL). Conocimientos en desarrollo de software y diseño de páginas web.
+						Ingeniero de Sistemas con mas de 10 años de Experiencia, Liderando proyectos de infraestructura y Soporte de servidores Onpremise y cloud especialmente AWS, administración de bases de datos (SQL, MySQL, PostgreSQL). Tengo Conocimientos en desarrollo de software y diseño de páginas web.
 					</h2>
 				</div>
 			</div>
@@ -40,9 +41,19 @@ import Perfil from '../icons/Perfil.astro';
 					linkedin
 				<SocialPill href="https://github.com/ManuelMendieta21">
 					<Github class="w-6 h-6"/>
-					Github</a>
-				
+					Github</a>				
 			</nav>
+
+			
 		</section>
+
+		<section class="flex justify-center p-11">
+			<div class="max-w-screen-md p-4"><Timeline></Timeline> </div>
+           
+        </section>
+    
+		
+
 	</main>
+
 </Layout>
