@@ -1,15 +1,12 @@
 import { defineConfig } from 'astro/config';
-
-import cloudflare from '@astrojs/cloudflare';
-
-
-
+import node from '@astrojs/node';
 import tailwind from '@astrojs/tailwind';
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://manuelmendieta21.github.io',
-  base: 'PorfolioMM',
+  base: '/PorfolioMM', // Asegúrate de que haya una barra al principio
   output: 'server',
-  adapter: cloudflare(),
+  adapter: node({ mode: 'standalone' }), // Especifica el modo aquí
 });

@@ -2,7 +2,7 @@
   "name": "porfolio-mm",
   "type": "module",
   "version": "0.0.1",
- "scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "astro dev",
     "start": "astro dev",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/cloudflare": "^11.1.0",
+    "@astrojs/node": "^8.3.4",
     "@astrojs/tailwind": "^5.1.2",
     "@fontsource-variable/onest": "^5.1.0",
     "astro": "^4.16.4",
